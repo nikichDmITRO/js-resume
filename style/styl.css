@@ -155,7 +155,7 @@ section {
 
 
 #sec3 {
- background-image: url(../img/header2.png);
+ background-image: url(../img/contacts.webp);
  background-size: cover;
  display: flex;
  flex-direction: column;
@@ -169,7 +169,7 @@ section {
   color: #fff;
   margin-bottom: 30px;
   font-family: 'Sono', sans-serif;
-  opacity: 0.7;
+  opacity: 0.9;
   
 }
 #sec3 a:hover{
