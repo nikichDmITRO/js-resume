@@ -107,7 +107,7 @@ section {
 }
 
 #sec1 {
-  background-image: url(img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
 }
 
@@ -135,7 +135,7 @@ section {
 }
 
 #sec2 {
-  background-image: url(img/header2.png);
+  background-image: url(../img/header2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -155,7 +155,7 @@ section {
 
 
 #sec3 {
- background-image: url(img/contacts.webp);
+ background-image: url(../img/header2.png);
  background-size: cover;
  display: flex;
  flex-direction: column;
