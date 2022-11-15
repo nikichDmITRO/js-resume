@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.header-title {
+  position: fixed;
+  height: 30px;
+  top: 15px;
+  left: 10px;
+  
+  font-size: 25px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: lato;
+  font-weight: 300;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: 'Sono', sans-serif;
+  position: fixed;
+  padding: 15px;
+
+  width: 100%;
+  z-index: 1000;
+  background-color: #03073584;
+  
+}
+
+nav ul {
+  font-size: 20px;
+ 
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+ 
+}
+
+nav ul li {
+  border-right: none;
+  
+  text-align: center;
+ 
+
+  margin-right: 35px;
+padding: 0;
+  
+}
+
+nav ul li:last-child {
+  border-right: 0;
+}
+
+nav ul li:last-child a {
+  border-right: 0;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav ul li a {
+  display: block;
+  padding-bottom: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+  
+}
+
+.active {
+  border-bottom: 1px solid white;
+  
+}
+
+.visible {
+  transform: translate(0);
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  font-size: 50px;
+}
+
+#sec1 {
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+}
+
+.sec1-block {
+  width: 80%;
+  margin: 0 auto;
+  
+
+}
+.sec1-block_text {
+  position: relative;
+  top: 57px;
+  text-align: center;
+  /* width: 100%; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Xanh Mono', monospace; */
+  font-family: 'IBM Plex Mono', monospace;
+
+  color: white;
+  font-size: 25px;
+  opacity: 0.9;
+  font-weight: 300;
+  /* display: inline-block; */
+  float: right;
+}
+
+#sec2 {
+  background-image: url(/img/header2.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#sec2 h1{
+ margin:20px 0;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 35px;
+ text-align: center;
+ margin-top: 20px;
+ color: white;
+ opacity: 0.8;
+  
+}
+
+
+#sec3 {
+ background-image: url(/img/contacts.webp);
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+#sec3 a{
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: 'Sono', sans-serif;
+  opacity: 0.7;
+  
+}
+#sec3 a:hover{
+  opacity: 1;
+}
+
+
+
+.flex_slider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+ 
+  
+ 
+}
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+
+}
+.prev{
+  height: 40px;
+  width: 70px;
+  background-color:#7d77d3 ;
+  border: none;
+  font-size: 20px;
+  border-radius: 10%;
+  cursor: pointer;
+  color: #fff;
+
+
+  
+
+}
+.next{
+  height: 40px;
+  width: 70px;
+  background-color:#7d77d3 ;;
+  border: none;
+  font-size: 20px;
+  border-radius: 10%;
+  cursor: pointer;
+  color: #fff;
+  
+
+}
+#viewport {
+  width: 100vw;
+  height: 450px;
+  overflow: hidden;
+
+ 
+}
+
+.slider {
+  position: relative;
+  width: calc(100% * 6);
+  height: 550px; 
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+
+}
+
+.slide {
+  width: 100%;
+  height: 450px;
+ 
+}
+.slide_container{
+
+  width: 50%;
+
+  height: 65vh;
+  margin: 0 auto;
+  
+
+ 
+
+ 
+  padding: 60px;
+  box-shadow: inset 0 0 50px;
+  }
+  
+  
+
+
+
+
+#viewSlider {
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.viewSlide {
+  width: 250px;
+  height: 2px;
+  background-color: #d2e0e9ee ;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #btn-menu {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  nav ul li {
+    border-right: 0;
+  }
+  nav ul li a {
+    border-right: 0;
+  }
+} /*# sourceMappingURL=styl.css.map */
