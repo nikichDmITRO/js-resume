@@ -240,5 +240,62 @@ section {
 }
 
 @media (max-width: 600px) {
-  
+  nav ul {
+    /* font-size: 20px; */
+    width: 380px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    /* list-style-type: none; */
+    /* padding-left: 40px;*/
+  }
+
+  .header-title {
+    display: none;
+  }
+  #viewSlider {
+    display: none;
+  }
+
+  .img {
+    /* width: auto; */
+    height: 164px;
+    border-radius: 100%;
+    position: relative;
+    top: 64px;
+  }
+
+  .slide_container {
+    width: 85%;
+    height: 55vh;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: inset 0 0 50px;
+  }
+
+  .sec1-block_text {
+    position: relative;
+    top: 57px;
+    text-align: center;
+    /* width: 100%; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Xanh Mono', monospace; */
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    font-size: 25px;
+    opacity: 0.9;
+    font-weight: 300;
+    /* display: inline-block; */
+    float: right;
+    background-color: #0e1118bd;
+  }
+
+  nav ul li a {
+    display: block;
+    padding-bottom: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+  }
 } /*# sourceMappingURL=styl.css.map */
